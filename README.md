@@ -31,4 +31,6 @@ sudo make install clean
 
 - [universcroll-example](https://st.suckless.org/patches/universcroll/st-universcroll-example-0.8.4.diff)
 
+- [openclipboard](https://st.suckless.org/patches/open_copied_url/st-openclipboard-20220217-0.8.5.diff)
+
 In the patch nordtheme I made a change to the config.h file
