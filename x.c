@@ -5,6 +5,7 @@
 #include <locale.h>
 #include <signal.h>
 #include <sys/select.h>
+#include <sys/wait.h>
 #include <time.h>
 #include <unistd.h>
 #include <libgen.h>
@@ -2147,4 +2148,24 @@ run:
 	run();
 
 	return 0;
+}
+
+void
+opencopied(const Arg *arg)
+{
+	char * const clip = xsel.clipboard;
+	pid_t chpid;
+
+	if(!clip) {
+		fprintf(stderr, "Warning: nothing copied to clipboard\n");
+		return;
+	}
+
+	if ((chpid = fork()) == 0) {
+		if (fork() == 0)
+			execlp(arg->v, arg->v, clip, NULL);
+		exit(1);
+	}
+	if (chpid > 0)
+		waitpid(chpid, NULL, 0);
 }

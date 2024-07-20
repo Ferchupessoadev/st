@@ -810,7 +810,7 @@ ttynew(const char *line, char *cmd, const char *out, char **args)
 		break;
 	default:
 #ifdef __OpenBSD__
-		if (pledge("stdio rpath tty proc", NULL) == -1)
+		if (pledge("stdio rpath tty proc exec", NULL) == -1)
 			die("pledge\n");
 #endif
 		close(s);
