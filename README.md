@@ -1,4 +1,4 @@
-# My build of st(simple terminal)
+# My custom build of st(simple terminal)
 
 ![my build of st](st.png)
 
