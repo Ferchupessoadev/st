@@ -25,8 +25,10 @@ sudo make install clean
 
 - [scrollback](https://st.suckless.org/patches/scrollback/st-scrollback-0.8.5.diff)
 
-- [nordtheme](https://st.suckless.org/patches/nordtheme/st-nordtheme-0.8.5.diff) In this patch I make a change to the config.h file
+- [nordtheme](https://st.suckless.org/patches/nordtheme/st-nordtheme-0.8.5.diff)
 
 - [universcroll](https://st.suckless.org/patches/universcroll/st-universcroll-0.8.4.diff)
 
 - [universcroll-example](https://st.suckless.org/patches/universcroll/st-universcroll-example-0.8.4.diff)
+
+In the patch nordtheme I make a change to the config.h file
