@@ -31,4 +31,4 @@ sudo make install clean
 
 - [universcroll-example](https://st.suckless.org/patches/universcroll/st-universcroll-example-0.8.4.diff)
 
-In the patch nordtheme I make a change to the config.h file
+In the patch nordtheme I made a change to the config.h file
