@@ -5,8 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font =
-    "JetBrains Mono Nerd Font:pixelsize=13:antialias=true:autohint=true";
+"JetBrains Mono Nerd Font:pixelsize=16:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -17,7 +16,7 @@ static int borderpx = 2;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/sh";
+static const char *shell = "/bin/sh";
 char *utmp = NULL;
 /* scroll program: to enable use a string like "scroll" */
 char *scroll = XK_NO_MOD;
